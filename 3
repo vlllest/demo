@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(0, "");
+	int start, end;
+	cout << "Введите начало и конец диапазона: ";
+	cin >> start;
+	cout << "Введите конец диапозона:  ";
+	cin >> end;
+
+	int sum = 0;
+	for (int i = start; i <= end; i++) {
+		if (i % 2 == 0) {  // Проверка на четность
+			sum += i;
+		}
+	}
+
+	cout << "Сумма всех четных чисел в диапазоне от " << start << " до " << end << " равна " << sum << endl;
+
+	return 0;
+}
